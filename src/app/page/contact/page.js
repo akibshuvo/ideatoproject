@@ -63,7 +63,7 @@ const ContactPage = () => {
               ></textarea>
             </div>
             <button
-              type="submit"
+              // type="submit"
               className="w-full bg-gray-700 hover:bg-yellow-500 text-white font-semibold py-2 rounded-lg transition duration-300"
             >
               Send Message

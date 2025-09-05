@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div className="space-y-6">
           <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           <p className="text-gray-600">
-            We'd love to hear from you! Whether you have a question about our
+            We&apos;d love to hear from you! Whether you have a question about our
             services, pricing, or anything else, feel free to reach out.
           </p>
 
@@ -63,7 +63,6 @@ const ContactPage = () => {
               ></textarea>
             </div>
             <button
-              // type="submit"
               className="w-full bg-gray-700 hover:bg-yellow-500 text-white font-semibold py-2 rounded-lg transition duration-300"
             >
               Send Message

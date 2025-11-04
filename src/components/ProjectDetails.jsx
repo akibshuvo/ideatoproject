@@ -25,7 +25,7 @@ const ProjectDetails = ({ title, description, images }) => {
       <div className="max-w-6xl mx-auto">
         {/* Back button */}
         <Link
-          href="/our-projects"
+          href="/"
           className="inline-block mb-6 text-yellow-600 hover:text-yellow-700 font-medium transition"
         >
           ← Back to Projects

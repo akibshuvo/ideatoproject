@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 
+
 const Navber = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 

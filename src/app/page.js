@@ -10,10 +10,10 @@ export default function Home() {
   return (
    <div className="text-6xl">
     <Banner/>
+    <OurProjects/>
     <Service/>
     <ProceessToWork/>
     <Experiancs/>
-    <OurProjects/>
     <ContactUs/>
    </div>
   );

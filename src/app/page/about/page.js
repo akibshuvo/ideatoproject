@@ -93,7 +93,7 @@ const AboutPage = () => {
               <Phone className="w-5 h-5" /> +8801785-607071
             </a>
             <a
-              href="https://facebook.com/mdatik.607071"
+              href="https://www.facebook.com/profile.php?id=61580956054296"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 hover:text-yellow-600 transition"

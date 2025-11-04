@@ -25,7 +25,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
           <div className="flex justify-center md:justify-start gap-4 mt-2 text-xl">
-            <a href="facebook.com/mdatik.607071" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/profile.php?id=61580956054296" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FaFacebook className="hover:text-blue-500 transition" />
             </a>
             <a target="_blank" rel="noopener noreferrer" aria-label="Instagram">

@@ -57,7 +57,8 @@ const OurProjects = () => {
       <div className="max-w-7xl mx-auto text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-900">Our Projects</h2>
         <p className="mt-4 text-gray-600 max-w-xl mx-auto leading-relaxed text-base md:text-lg">
-          Check out some of the innovative projects we've built, combining robotics, IoT, and electronics.
+          আমাদের তৈরি কিছু প্রজেক্ট! আরও বিস্তারিত দেখতে ভিজিট করুন আমাদের ফেসবুক পেইজ।
+
         </p>
       </div>
 

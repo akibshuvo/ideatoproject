@@ -2,15 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 import SerImage from '../../assets/pic1.jpg';
 import Pic2 from '../../assets/pic2.jpg';
-import Pic3 from '../../assets/pic3.jpg';
-import Pic4 from '../../assets/pic7.jpg';
+import Pic3 from '../../assets/mini.jpg';
+import Pic4 from '../../assets/col.webp';
 import Pic5 from '../../assets/pic5.jpg';
-import Pic6 from '../../assets/pic6.jpg';
+import Pic6 from '../../assets/in.png';
 
 const services = [
   { name: 'Arduino Projects', image: SerImage },
   { name: 'Blynk IoT Troubleshooting & Development ', image: Pic2 },
-  { name: 'Miniature Models spberry Pi', image: Pic3 },
+  { name: 'Miniature Models', image: Pic3 },
   { name: 'College & University Projects IoT Solutions', image: Pic4 },
   { name: 'Institutional Prototypes', image: Pic6 },
   { name: 'PCB Design', image: Pic5 },

@@ -17,12 +17,12 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center justify-center space-x-4 bg-gray-50 shadow-md rounded-lg py-4 px-6">
             <FaEnvelope className="text-xl text-blue-500" />
-            <span className="text-lg md:text-xl font-medium text-gray-800">atikprojects@email.com</span>
+            <span className="text-lg md:text-xl font-medium text-gray-800">business.ideatoproject@gmail.com</span>
           </div>
         </div>
 
         <div className="flex justify-center space-x-6">
-          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 text-2xl transition">
+          <a href="https://www.facebook.com/profile.php?id=61580956054296" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 text-2xl transition">
             <FaFacebookF />
           </a>
           <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700 text-2xl transition">

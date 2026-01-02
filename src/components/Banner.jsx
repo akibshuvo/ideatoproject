@@ -23,13 +23,12 @@ const Banner = () => {
         </h1>
         <p className="text-lg text-gray-300 mb-8">
           স্কুল কলেজ বা ইউনিভার্সিটির যেকোনো প্রজেক্টের জন্য যোগাযোগ করুন আমাদের সাথে।
-
         </p>
 
         <>
           {/* Mobile button */}
           <Link href="https://wa.me/8801785607071">
-            <div className=" flex items-center gap-x-3 justify-center bg-amber-50 text-black font-bold px-4 py-4 rounded-lg hover:bg-amber-50 transition text-3xl md:hidden">
+            <div className=" flex items-center gap-x-3 justify-center bg-white text-black font-bold px-4 py-4 rounded-lg hover:bg-amber-50 transition text-3xl md:hidden">
               <IoLogoWhatsapp className="text-[#25d366] animate-call-dance" />
               Contact US
             </div>

@@ -1,10 +1,26 @@
-import React from 'react';
-import ProjectDetails from '../../../components/ProjectDetails';
-import Pic6 from '../../../../assets/smarthome1.webp';
-import Pic7 from '../../../../assets/smarthome2.webp';
+"use client";
 
+import React, { useEffect, useRef } from "react";
+import ProjectDetails from "../../../components/ProjectDetails";
+import Pic6 from "../../../../assets/smarthome1.webp";
+import Pic7 from "../../../../assets/smarthome2.webp";
 
 const SmartRailway = () => {
+  const firedRef = useRef(false);
+
+  useEffect(() => {
+    if (firedRef.current) return;
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", {
+        content_name: "IoT Based Solar and Grid Energy Monitoring System",
+        content_category: "IoT & Smart Energy Project",
+        content_type: "project",
+      });
+    }
+
+    firedRef.current = true;
+  }, []);
   return (
     <ProjectDetails
       title="IoT Based Solar and Grid Energy Monitoring System"

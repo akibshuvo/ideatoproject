@@ -20,7 +20,7 @@ const ContactPage = () => {
             </div>
             <div>
               <h4 className="font-semibold text-gray-700">📞 Phone</h4>
-              <p className="text-gray-600">+8801785-607071</p>
+              <p className="text-gray-600">+8801775533232</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-700">✉️ Email</h4>

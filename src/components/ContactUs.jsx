@@ -13,7 +13,7 @@ const ContactUs = () => {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           <div className="flex items-center justify-center space-x-4 bg-gray-50 shadow-md rounded-lg py-4 px-6">
             <FaPhoneAlt className="text-xl text-blue-500" />
-            <span className="text-lg md:text-xl font-medium text-gray-800">+8801785607071</span>
+            <span className="text-lg md:text-xl font-medium text-gray-800">+8801775533232</span>
           </div>
           <div className="flex items-center justify-center space-x-4 bg-gray-50 shadow-md rounded-lg py-4 px-6">
             <FaEnvelope className="text-xl text-blue-500" />

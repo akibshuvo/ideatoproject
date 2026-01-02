@@ -1,10 +1,28 @@
-import React from 'react';
-import ProjectDetails from '../../../components/ProjectDetails';
-import Pic6 from '../../../../assets/pcb1.webp';
-import Pic7 from '../../../../assets/pcb2.webp';
-import Pic8 from '../../../../assets/pcb3.webp';
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import ProjectDetails from "../../../components/ProjectDetails";
+import Pic6 from "../../../../assets/pcb1.webp";
+import Pic7 from "../../../../assets/pcb2.webp";
+import Pic8 from "../../../../assets/pcb3.webp";
 
 const SmartRailway = () => {
+  const firedRef = useRef(false);
+
+  useEffect(() => {
+    if (firedRef.current) return;
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", {
+        content_name: "PCB Design and Assembly by IdeaToProject",
+        content_category: "PCB Design & Electronics Service",
+        content_type: "service",
+      });
+    }
+
+    firedRef.current = true;
+  }, []);
+
   return (
     <ProjectDetails
       title="PCB Design and Assembly by IdeaToProject"

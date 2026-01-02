@@ -1,10 +1,28 @@
-import React from 'react';
-import ProjectDetails from '../../../components/ProjectDetails';
-import Pic6 from '../../../../assets/robo1.webp';
-import Pic7 from '../../../../assets/robo2.webp';
-import Pic8 from '../../../../assets/robo3.webp';
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import ProjectDetails from "../../../components/ProjectDetails";
+import Pic6 from "../../../../assets/robo1.webp";
+import Pic7 from "../../../../assets/robo2.webp";
+import Pic8 from "../../../../assets/robo3.webp";
 
 const SmartRailway = () => {
+  const firedRef = useRef(false);
+
+  useEffect(() => {
+    if (firedRef.current) return;
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", {
+        content_name: "Hand Gesture Controlled 5 DOF Robotic Arm",
+        content_category: "Robotics Project",
+        content_type: "project",
+      });
+    }
+
+    firedRef.current = true;
+  }, []);
+
   return (
     <ProjectDetails
       title="Hand Gesture Controlled 5 DOF Robotic Arm"
@@ -15,10 +33,10 @@ A dedicated touch sensor for the gripper enables object manipulation—when acti
 
 Key Features:
 
-•	5 Degrees of Freedom (DOF) for versatile movement and functionality.
-•	Gesture-controlled operation through a wearable glove with a gyro sensor.
-•	Touch sensor switching for selecting different arm sections.
-•	Realistic gripping mechanism that simulates human hand movement.
+• 5 Degrees of Freedom (DOF) for versatile movement and functionality.
+• Gesture-controlled operation through a wearable glove with a gyro sensor.
+• Touch sensor switching for selecting different arm sections.
+• Realistic gripping mechanism that simulates human hand movement.
 
 This project is not only a demonstration of cutting-edge gesture control technology but also carries immense potential for industrial automation, medical assistance, and remote-controlled operations. With its seamless integration of hardware and intuitive design, it stands as a powerful example of future-ready robotics.
 `}

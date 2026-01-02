@@ -1,10 +1,27 @@
-import React from 'react';
-import ProjectDetails from '../../../components/ProjectDetails';
-import Pic6 from '../../../../assets/clock1.webp';
-import Pic7 from '../../../../assets/clock2.webp';
-import Pic8 from '../../../../assets/clock3.webp';
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import ProjectDetails from "../../../components/ProjectDetails";
+import Pic6 from "../../../../assets/clock1.webp";
+import Pic7 from "../../../../assets/clock2.webp";
+import Pic8 from "../../../../assets/clock3.webp";
 
 const SmartRailway = () => {
+  const firedRef = useRef(false);
+
+  useEffect(() => {
+    if (firedRef.current) return;
+
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "ViewContent", {
+        content_name: "Two-Button Mobile Phone for Kids (DIY Project)",
+        content_category: "DIY Electronics Project",
+        content_type: "project",
+      });
+    }
+
+    firedRef.current = true;
+  }, []);
   return (
     <ProjectDetails
       title="Two-Button Mobile Phone for Kids (DIY Project)"

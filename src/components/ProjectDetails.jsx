@@ -5,9 +5,23 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Clipboard } from 'lucide-react'; // Make sure lucide-react is installed
+
+
+
 
 const ProjectDetails = ({ title, description, images }) => {
   const [current, setCurrent] = useState(0);
+
+    const [copied, setCopied] = useState(false);
+  const phoneNumber = "01775533232";
+  const whatsappLink = `https://wa.me/${phoneNumber}`;
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(phoneNumber);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   // Auto-play slider every 4s
   useEffect(() => {
@@ -89,6 +103,38 @@ const ProjectDetails = ({ title, description, images }) => {
             ))}
           </div>
         </div>
+
+        <div className="flex flex-col sm:flex-row items-center justify-between bg-white border border-gray-200 rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-lg transition mb-8">
+      
+      {/* Left side: WhatsApp info */}
+      <div className="flex items-center gap-4">
+        <div className="bg-green-500 w-14 h-14 flex items-center justify-center rounded-full text-2xl text-white shadow-md">
+          📱
+        </div>
+        <div>
+          <p className="text-gray-800 font-semibold text-lg">
+            স্কুল, কলেজ বা ইউনিভার্সিটির যেকোনো প্রজেক্টের জন্য যোগাযোগ করুন আমাদের সাথে।
+          </p>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-green-600 font-bold hover:underline mt-1 inline-block text-lg"
+          >
+            {phoneNumber} → WhatsApp
+          </a>
+        </div>
+      </div>
+
+      {/* Right side: Copy button */}
+      <button
+        onClick={handleCopy}
+        className="flex items-center gap-2 mt-4 sm:mt-0 bg-green-500 hover:bg-green-600 text-white font-medium px-5 py-3 rounded-full shadow transition relative"
+      >
+        <Clipboard className="w-5 h-5" />
+        {copied ? "Copied!" : "Copy"}
+      </button>
+    </div>
 
         {/* Description */}
         <motion.div

@@ -38,7 +38,7 @@ const Navber = () => {
         {/* CTA Button on desktop */}
      <div className="hidden md:block">
   <a
-    href="https://wa.me/8801785607071"
+    href="https://wa.me/8801775533232"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-gray-900 text-white px-4 md:py-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition duration-200"
@@ -91,7 +91,7 @@ const Navber = () => {
             </li>
             <li>
               <a
-    href="https://wa.me/8801785607071"
+    href="https://wa.me/8801775533232"
     target="_blank"
     rel="noopener noreferrer"
     className="bg-gray-900 text-white px-4 md:py-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition duration-200"

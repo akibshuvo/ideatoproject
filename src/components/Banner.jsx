@@ -29,7 +29,7 @@ const Banner = () => {
         <>
           {/* Mobile button */}
           <Link href="https://wa.me/8801785607071">
-            <div className=" flex items-center gap-x-3 justify-center bg-white text-black font-bold px-4 py-4 rounded-lg hover:bg-amber-50 transition text-3xl md:hidden">
+            <div className=" flex items-center gap-x-3 justify-center bg-amber-50 text-black font-bold px-4 py-4 rounded-lg hover:bg-amber-50 transition text-3xl md:hidden">
               <IoLogoWhatsapp className="text-[#25d366] animate-call-dance" />
               Contact US
             </div>
@@ -37,7 +37,7 @@ const Banner = () => {
 
           {/* Desktop button */}
           <Link href="https://wa.me/8801785607071">
-            <div className="md:flex items-center gap-x-5 bg-white text-black font-bold px-6 py-3 rounded-lg justify-center shadow-4xl hover:bg-amber-50 hidden">
+            <div className="md:flex items-center gap-x-5 bg-amber-50 text-black font-bold px-6 py-3 rounded-lg justify-center shadow-4xl hover:bg-amber-50 hidden">
               <IoLogoWhatsapp className="text-[#25d366] animate-call-dance" />
               Contact US
             </div>
